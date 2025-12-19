@@ -6,6 +6,10 @@ var quiz = [
         answer: "Delhi"
     },
     {
+        question:" What is 5+7 ?",
+        answer:"12"
+    },
+    {
         question: "Which language is used for web styling?",
         answer: "css"
     },
@@ -27,12 +31,13 @@ for (var i = 0; i < quiz.length; i++) {
     userAnswer = userAnswer.toLowerCase().trim();
 
     if (userAnswer === quiz[i].answer) {
-        alert("Correct! ✅");
+        alert("Correct! ");
         score++;
     } else {
-        alert("Wrong ❌\nCorrect answer is: " + quiz[i].answer);
+        alert("Wrong \nCorrect answer is: " + quiz[i].answer);
     }
 }
 
 alert("Quiz Finished!\nYour Score: " + score + " out of " + quiz.length);
 console.log("Final Score:", score, "/", quiz.length);
+
